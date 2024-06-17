@@ -28,6 +28,8 @@ app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
 
+app.get("/", (req, res) => res.send("API Running"));
+
 mongoose
   .connect(process.env.MONGODB_URI, {
     // Use env var for MongoDB URI
