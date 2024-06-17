@@ -11,7 +11,7 @@ export default function Loginpage() {
 
   async function login(ev){
     ev.preventDefault();
-    const response=await fetch('http://localhost:4000/login',{
+    const response=await fetch('https://blog-app-2w2i.onrender.com/login',{
       method:'POST',
       body:JSON.stringify({username,password}),
       headers:{
