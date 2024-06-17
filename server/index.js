@@ -23,7 +23,7 @@ const secret = process.env.JWT_SECRET || "ahjvwdhcbljenfkl"; // Use env var for 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-app.use(cors({ credentials: true, origin: "https://blog-app-gray-eight.vercel.app" }));
+app.use(cors({ credentials: true, origin: "https://blog-app-alpha-pink.vercel.app" }));
 app.use(express.json());
 app.use(cookieParser());
 app.use("/uploads", express.static(__dirname + "/uploads"));
