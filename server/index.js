@@ -177,7 +177,6 @@ app.get("/post/:id", async (req, res) => {
 
 const PORT = process.env.PORT || 4000;
 
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
-}
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+
 
